@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "981867252186",
+    "project_id": "ultrahangapp",
+    "storage_bucket": "ultrahangapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:981867252186:android:d9ee6e3cd21284e59358e3",
+        "android_client_info": {
+          "package_name": "com.example.ultrahangapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdNX0VEyxRJpTf6CdJA0Tsiz8OwTjnO_w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

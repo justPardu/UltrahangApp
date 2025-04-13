@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="booking_list_description">Foglalások listája ultrahangos vizsgálatra</string>
+    <string name="patient_name">Patient Name</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="doctor">Doctor</string>
+</resources>
