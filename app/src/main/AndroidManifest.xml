@@ -3,6 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.ultrahangapp">
 
+    <!-- Engedély pontos riasztásokhoz -->
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <!-- Engedély értesítésekhez (Android 13+) -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -11,20 +16,28 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MyApplication"
+        android:theme="@style/Base.Theme.MyApplication"
         tools:targetApi="31">
+
         <activity
             android:name=".ui.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-        <activity android:name=".ui.RegisterActivity"/>
+
+        <activity android:name=".ui.RegisterActivity" />
         <activity android:name=".ui.HomeActivity" />
+        <activity android:name=".ui.BookingActivity" />
+        <activity android:name=".ui.EditBookingActivity" />
+
+        <receiver
+            android:name=".receiver.NotificationReceiver" />
+
+        <receiver
+            android:name=".receiver.AlarmReceiver"/>
 
     </application>
 

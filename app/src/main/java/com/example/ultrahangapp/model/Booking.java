@@ -7,16 +7,14 @@ public class Booking {
     private String patientName;
     private String date;
     private String time;
-    private String doctor;
 
     // Üres konstruktor Firestore számára
     public Booking() {}
 
-    public Booking(String patientName, String date, String time, String doctor) {
+    public Booking(String patientName, String date, String time) {
         this.patientName = patientName;
         this.date = date;
         this.time = time;
-        this.doctor = doctor;
     }
 
     @Exclude
@@ -50,13 +48,5 @@ public class Booking {
 
     public void setTime(String time) {
         this.time = time;
-    }
-
-    public String getDoctor() {
-        return doctor;
-    }
-
-    public void setDoctor(String doctor) {
-        this.doctor = doctor;
     }
 }

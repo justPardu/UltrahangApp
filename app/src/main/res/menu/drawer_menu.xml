@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_booking"
+        android:title="Időpontfoglalás"
+        android:icon="@android:drawable/ic_menu_my_calendar"/>
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Kijelentkezés"
+        android:icon="@android:drawable/ic_lock_power_off"/>
+</menu>

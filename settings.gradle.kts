@@ -7,11 +7,11 @@ pluginManagement {
                 includeGroupByRegex("androidx.*")
             }
         }
-        google()
-        mavenCentral()
         gradlePluginPortal()
+        mavenCentral()
     }
 }
+
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
